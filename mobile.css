@@ -1,0 +1,86 @@
+@media screen and (max-width: 600px){
+  *{
+    background-color: black;
+  }
+  
+  .body{
+        width: 100%;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .calculator {
+        width: 100%;
+        margin: 200px 0 0 0;
+        padding: 0px;
+        border: none;
+        border-radius: 0px;
+        box-shadow: 0;
+        text-align: center;
+        background-color: black;
+
+      }
+      
+      #result {
+        width: 90%;
+        height: 100px;
+        font-size: 75px;
+        font-weight: 200px;
+        text-align: right;
+        padding: 0;
+        border: none;
+        border-radius: none;
+        box-shadow: none;
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        margin-bottom: 30px;
+      }
+      
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 12px;
+        margin-top: 20px;
+      }
+    
+      button {
+        width: 90px;
+        height: 90px;
+        font-size: 40px;
+        border: none;
+        border-radius: 50px;
+        background-color: #042a16;
+        cursor: pointer;
+        color: white;   
+      }
+      
+      button:active {
+        background-color: #b8b6b6;
+      }
+      
+      .operator {
+        background-color: #ffbb00;
+        color: #fff;
+      }
+      .operator:focus{
+        background-color: white;
+        color: #ffbb00;
+      }
+      
+      .number {
+        background-color: #636764;
+      }
+    
+      #zero {
+        grid-column: span 2;
+        width: auto;
+    }
+    #clear, #PlusMinus, #percent{
+      background-color: #b8b6b6;
+    }
+    #clear, #PlusMinus, #percent,::after{
+      background-color: #cdcaca;
+      color: #fff;
+    }
+    
+
+}

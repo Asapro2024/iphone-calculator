@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="result" disabled>
+    <div class="buttons">
+      <button onclick="clearScreen()" class="operator btn" id="clear">C</button>
+      <button onclick="togglesign()" class="operator btn" id="PlusMinus">+/-</button>
+      <button onclick="deleteChar()" class="operator btn" id="percent">&#37;</button>
+      <button onclick="appendValue('/')" class="operator btn" id="divide">&#247;</button>
+      <button onclick="appendValue('7')" class="number btn" id="seven">7</button>
+      <button onclick="appendValue('8')" class="number btn" id="eight">8</button>
+      <button onclick="appendValue('9')" class="number btn" id="nine">9</button>
+      <button onclick="appendValue('*')" class="operator btn" id="multiply">&times;</button>
+      <button onclick="appendValue('4')" class="number btn" id="four">4</button>
+      <button onclick="appendValue('5')" class="number btn" id="five">5</button>
+      <button onclick="appendValue('6')" class="number btn" id="six">6</button>
+      <button onclick="appendValue('-')" class="operator btn" id="subtract">&minus;</button>
+      <button onclick="appendValue('1')" class="number btn" id="one">1</button>
+      <button onclick="appendValue('2')" class="number btn" id="two">2</button>
+      <button onclick="appendValue('3')" class="number btn" id="three">3</button>
+      <button onclick="appendValue('+')" class="operator btn" id="add">&plus;</button>
+      <button onclick="appendValue('0')" class="number btn" id="zero">0</button>
+      <button onclick="appendValue('.')" class="number btn" id="decimal">.</button>
+      <button onclick="calculate()" class="operator btn" id="equals">&equals;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
